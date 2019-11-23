@@ -10,8 +10,7 @@
     d:DesignWidth="400">
 
     <StackPanel Orientation="Horizontal">
-        <TextBlock Text="&#8226; "/>
-        <TextBlock FontSize="18" Text="{Binding}"/>
-        <TextBlock FontSize="18" Text=" minutes"/>
+        <TextBlock FontSize="16" Foreground="#415058" FontWeight="SemiBold" Text="{Binding}"/>
+        <TextBlock FontSize="16" Foreground="#415058" Text=" minutes until next bus"/>
     </StackPanel>
 </UserControl>

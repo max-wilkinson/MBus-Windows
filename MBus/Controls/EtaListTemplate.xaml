@@ -18,15 +18,11 @@
 
     <StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Image Source="/assets/bus.png" 
-                           Width="20" 
-                           Margin="-10 5 10 0"
-                           ></Image>
-            <TextBlock FontSize="20" Text="{x:Bind CombinedEta.RouteName}"/>
+            <TextBlock FontSize="20" Text="{x:Bind CombinedEta.RouteName}" FontWeight="SemiBold" Foreground="#0F223D"/>
         </StackPanel>
         <ListView ItemsSource="{x:Bind CombinedEta.MinutesAwayCollection}"
                   ItemTemplate="{StaticResource MinutesAwayListTemplate}"
-                  Padding="10">
+                  Padding="0,10,0,10">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="Template">

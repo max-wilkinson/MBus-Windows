@@ -11,7 +11,7 @@
 
     <Page.Resources>
         <DataTemplate x:Key="CardListDataTemplate" x:DataType="data:InfoCard">
-            <controls:CardListTemplate Width="{Binding ElementName=List, Path=ActualWidth}"/>
+            <controls:CardListTemplate Width="{Binding ElementName=List, Path=ActualWidth}" MaxWidth="700"/>
         </DataTemplate>
     </Page.Resources>
 
@@ -36,7 +36,8 @@
         <ListView Grid.Row="1" 
                   x:Name="List"
                   HorizontalAlignment="Stretch"
-                  Padding="20 5 20 5"
+                  Padding="0 50 0 0"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
                   ItemsSource="{x:Bind Cards}"
                   ItemTemplate="{StaticResource CardListDataTemplate}">
             <ListView.ItemContainerStyle>
